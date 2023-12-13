@@ -1,0 +1,93 @@
+<%- include("./partials/header.ejs") %>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link href="/css/about.css" rel="stylesheet">
+<title>About</title>
+</head>
+
+<style>
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+     
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 70%;
+      height: 50%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit:contain;
+    }
+  </style>
+</head>
+
+<body>
+    <h1>Gallery</h1>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="/img/old-age-1.png">
+      </div>
+      <div class="swiper-slide">
+        <img src="/img/old-age-2.png">
+      </div>
+      <div class="swiper-slide">
+        <img src="/img/old-age-3.png">
+      </div>
+      <div class="swiper-slide">
+        <img src="/img/old-age-4.jpg">
+      </div>
+      <div class="swiper-slide">
+        <img src="/img/old-age-5.jpg">
+      </div>
+      <div class="swiper-slide">
+        <img src="/img/old-age-6.jpg">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+      },
+    });
+    var swiper2 = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>

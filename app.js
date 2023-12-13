@@ -16,6 +16,9 @@ app.get("/",(req,res)=>{
 app.get("/about",(req,res)=>{
     res.render("about.ejs")
 })
+app.get("/gallery",(req,res)=>{
+    res.render("gallery.ejs")
+})
 
 
 
